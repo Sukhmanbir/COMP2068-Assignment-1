@@ -1,0 +1,24 @@
+{
+  "name": "assignment-1",
+  "description": "portfolio deployed on azure and heroku",
+  "main": "",
+  "authors": [
+    "Sukhmanbir Kaur <sukhmanbir.kaur@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Sukhmanbir/COMP2068-Assignment-1",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
