@@ -1,1 +1,5 @@
 /* custom css */
+body{
+    background: url('/images/2.jpg') no-repeat right top;
+    background-size: cover;
+}
