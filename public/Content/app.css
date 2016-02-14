@@ -1,5 +1,149 @@
 /* custom css */
 body{
-    background: url('/images/2.jpg') no-repeat right top;
+    background: url('/images/2.jpg') left top;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
+    color: #fff;
+}
+
+/***** Navbar ******/
+
+.navbar-default{
+    background-color: rgba(0,0,0,0.75);
+    background-image: none;
+    border-color: transparent;
+    border: none;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+    background-image: none;
+    background-color: transparent;
+    color: #e59c28;
+}
+
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: rgba(199, 129, 47, 0.50);
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: rgba(199, 129, 47, 0.50);
+    background: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: rgba(199, 129, 47, 0.25);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(199, 129, 47, 0.52);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgba(199, 129, 47, 0.52);
+}
+
+.navbar-brand{
+    padding: 10px 10px;
+}
+
+/******Intro section*******/
+
+.intro {
+    min-height: 650px;
+    padding-top: 150px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.name span {
+    color: orange;
+}
+
+.question {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:14.6em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:14.6em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.name-tags { 
+    margin-left: 30%;
+    color: orange;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 30px;
+    width:14.6em;
+    white-space:nowrap;
+    overflow:hidden!important;
+    border-right: .1em solid orange;
+    
+    -webkit-animation: typing 7s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 7s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+
+.scroll{
+    margin-top: 100px;
+}
+
+.scroll i {
+    font-size: 60px;
+    color:#fff;
+}
+
+/***** Media Screens******/
+
+@media(max-width: 767px){
+    .navbar-default .navbar-collapse{
+        border-color: rgba(199, 129, 47, 0.52);
+        background-color: rgba(199, 129, 47, 0.52);
+    }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
+    color: rgba(255,255,255,0.50);
+    background-color: rgba(199,129,47,1);
+    }
+
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #333;
+        background-color: rgba(199,129,47,1);
+    }
+}
+
+@media(max-width: 550px){
+    .name-tags{
+        display: none;
+    }   
 }
