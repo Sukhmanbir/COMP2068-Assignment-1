@@ -1,10 +1,49 @@
+    <!--
+    Filename : footer.ejs
+    Author name: Sukhmanbir Kaur
+    Website name: Portfolio
+    Description: This file is footer portion of site 
+-->
+    
+    
+    <!-- footer section -->
+    <section id="footer" class="footer text-center">
+        <div class="container">
+            <div class="social wow fadeInUp" data-wow-duration="3s">
+                <ul>
+                    <li><a href="https://github.com/Sukhmanbir/"><span class="fa fa-github"></span></a></li>
+                    <li><a href="https://ca.linkedin.com/in/sukhmanbirkaur"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="https://twitter.com/SukhmanbirK"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="https://plus.google.com/u/0/117402104838576260799/posts"><span class="fa fa-google-plus"></span></a></li>
+                 </ul>
+             </div><!-- end of social -->
+             <div class="row copyright">
+                 <strong>&copy; <span id="current-year"></span>
+		- SUKHMANBIR KAUR - All Rights Reserved.</strong>
+             </div>
+        </div><!-- end of div container -->
+    </section><!-- end of section footer -->
+    
     <!-- JavaScript Section-->
-    <script src="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="/Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/Scripts/lib/wow/dist/wow.min.js"></script>
+    <script src="/Scripts/lib/bxslider/jquery.bxslider.min.js"></script>
     <script src="/Scripts/app.js"></script>
     <script>
-       new WOW().init();
+       new WOW().init();    
+        //home page slider
+		$('.bxslider').bxSlider({
+			slideWidth : 820,
+			auto : true,
+			adaptiveHeight : true,
+            autoHover : true
+		});
+          var sliderWidth = $('.bx-wrapper').outerWidth();
+		$('.bx-wrapper').width(sliderWidth - 45);
+        
+        //setting current year in copyright
+        document.getElementById('current-year').innerHTML = new Date().getFullYear();
     </script>
 </body>
 
